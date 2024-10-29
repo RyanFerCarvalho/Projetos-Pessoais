@@ -1,0 +1,437 @@
+{
+	"words": [
+		{
+			"word": "Cachorro",      
+			"hints": [
+				"Possui quatro patas", 
+				"São mamíferos",       
+				"Possuem um bom olfato"
+			]
+		},
+		{
+			"word": "Trem",
+			"hints": [
+				"É extenso",
+				"É rápido",
+				"Atravessa cidades",
+				"Para em estações"
+			]
+		},
+		{
+			"word": "Celular",
+			"hints": [
+				"Pode fazer ligações",
+				"É possível baixar aplicativos"
+			]
+		},
+		{
+			"word": "Estante",
+			"hints": [
+				"Utilizado para guardar objetos",
+				"Possui prateleiras",
+				"Diversos tamanhos"
+			]
+		},
+		{
+			"word": "Sabonete",
+			"hints": [
+				"Usado no banho",
+				"Pode ser líquido",
+				"Faz espuma",
+				"É cheiroso"
+			]
+		},
+		{
+			"word": "Notebook",
+			"hints": [
+				"Usa internet para pesquisar",
+				"Possuí tela e teclado",
+				"É portátil"
+			]
+		},
+		{
+			"word": "Roupas",
+			"hints": [
+				"São feitas de tecido",
+				"Curtas no quente",
+				"Longas no frio",
+				"Diversos estilos e marcas"
+			]
+		},
+		{
+			"word": "Sorvete",
+			"hints": [
+				"É gelado",
+				"É doce",
+				"Perfeito em dias quentes"
+			]
+		},
+		{
+			"word": "Chuva",
+			"hints": [
+				"Auxilia no crescimento das plantas",
+				"Possuí raios e trovões",
+				"Essencial para a vida"
+			]
+		},
+		{
+			"word": "Shampoo",
+			"hints": [
+				"Usado no banho",
+				"Causa irritação quando cai no olho"
+			]
+		},
+		{
+			"word": "Cebola",
+			"hints": [
+				"Serve como tempero",
+				"Cheiro forte",
+				"Nos faz chorar"
+			]
+		},
+		{
+			"word": "Fotos",
+			"hints": [
+				"Está presente nos quadros e álbuns",
+				"Registro de um momento"
+			]
+		},
+		{
+			"word": "Caderno",
+			"hints": [
+				"Alguns possuem linhas e outros não",
+				"Usamos para escrever",
+				"Faz parte do material escolar",
+				"Centenas de folhas"
+			]
+		},
+		{
+			"word": "Tijolo",
+			"hints": [
+				"Produto cerâmico",
+				"Existe diversos tipos",
+				"Usado em construções"
+			]
+		},
+		{
+			"word": "Vassoura",
+			"hints": [
+				"Utilizada para limpeza",
+				"Possuí várias cerdas",
+				"Seu cabo longo auxilia no manuseio"
+			]
+		},
+		{
+			"word": "Caixa",
+			"hints": [
+				"Serve para armazenar algo",
+				"Pode ser pequena ou grande",
+				"Possuí diversas cores",
+				"Pode ser feita de diversos materiais"
+			]
+		},
+		{
+			"word": "Cama",
+			"hints": [
+				"Tem quatro pés",
+				"Usada todas as noites"
+			]
+		},
+		{
+			"word": "Zoológico",
+			"hints": [
+				"Local para se visitar",
+				"Possui animais de diferentes espécies",
+				"Repleto de vegetação"
+			]
+		},
+		{
+			"word": "Geladeira",
+			"hints": [
+				"Armazena alimentos",
+				"Conta com refrigeração",
+				"É pesada",
+				"Algumas possuem freezer"
+			]
+		},
+		{
+			"word": "Sapato",
+			"hints": [
+				"Usamos nos pés",
+				"Diversos tamanhos"
+			]
+		},
+		{
+			"word": "Flores",
+			"hints": [
+				"São perfumadas",
+				"Existem muitas espécies",
+				"Crescem em vasos"
+			]
+		},
+		{
+			"word": "Cadeado",
+			"hints": [
+				"Utilizado para trancar algo",
+				"Existe modelos que usam combinações"
+			]
+		},
+		{
+			"word": "Dinheiro",
+			"hints": [
+				"É uma forma de pagamento",
+				"Cabe no bolso",
+				"Diversos valores",
+				"Usado no mundo inteiro"
+			]
+		},
+		{
+			"word": "Lapiseira",
+			"hints": [
+				"Possuí grafite",
+				"Utilizado em escritas e desenhos"
+			]
+		},
+		{
+			"word": "Chave",
+			"hints": [
+				"Cabe no bolso",
+				"Abre portas",
+				"Utilizado no dia a dia"
+			]
+		},
+		{
+			"word": "Tapete",
+			"hints": [
+				"Pode existir em todos os lugares da casa",
+				"Pequeno ou grande",
+				"Está no chão",
+				"Alguns modelos são felpudos"
+			]
+		},
+		{
+			"word": "Faca",
+			"hints": [
+				"Manuseado para fazer cortes",
+				"Utensílio de cozinha",
+				"Pode ser perigosa"
+			]
+		},
+		{
+			"word": "Navio",
+			"hints": [
+				"Utilizado para transportes de cargas e pessoas",
+				"Só é usado na água",
+				"Possuí casco",
+				"Possui âncora"
+			]
+		},
+		{
+			"word": "Teclado",
+			"hints": [
+				"Tem diversos botões",
+				"Desktops e notebooks utilizam"
+			]
+		},
+		{
+			"word": "Gasolina",
+			"hints": [
+				"Obtida a partir do petróleo bruto",
+				"Utilizada em veículos e máquinas",
+				"EUA é o país que mais fábrica",
+				"O responsável por colocar é o frentista"
+			]
+		},
+		{
+			"word": "Bateria",
+			"hints": [
+				"Está presente na eletrônica",
+				"Está presente na música",
+				"Duplo sentido"
+			]
+		},
+		{
+			"word": "Museu",
+			"hints": [
+				"Contém registros de fatos do passado",
+				"Conta a história de um povo"
+			]
+		},
+		{
+			"word": "Portugal",
+			"hints": [
+				"É um país",
+				"Colonizou a Angola",
+				"O bacalhau é o alimento mais consumido neste país",
+				"Errou o caminho para as índias"
+			]
+		},
+		{
+			"word": "Perfume",
+			"hints": [
+				"Contém álcool",
+				"Utilizado para dar um cheiro bom a quem usa",
+				"Importados são caros"
+			]
+		},
+		{
+			"word": "Risada",
+			"hints": [
+				"Ouvir uma piada provoca isso",
+				"É o antônimo de choro"
+			]
+		},
+		{
+			"word": "Alfabeto",
+			"hints": [
+				"É ensinado nas escolas",
+				"Compõe vinte e seis letras",
+				"As letras do seu nome estão nele",
+				"Aprendemos no primário"
+			]
+		},
+		{
+			"word": "Cavalo",
+			"hints": [
+				"Utilizamos cela para montar",
+				"É utilizado pelas equipes que jogam Polo",
+				"Usa ferradura",
+				"Normalmente vive em espaços amplos e abertos"
+			]
+		},
+		{
+			"word": "Vidro",
+			"hints": [
+				"É frágil",
+				"É um ótimo dielétrico",
+				"Alguns são temperados"
+			]
+		},
+		{
+			"word": "Bola",
+			"hints": [
+				"Tem formato esférico",
+				"Utiliza no futebol"
+			]
+		},
+		{
+			"word": "Chuveiro",
+			"hints": [
+				"Fica no banheiro",
+				"Gera vapor",
+				"Possui estado quente para a água em dias frios"
+			]
+		},
+		{
+			"word": "Escada",
+			"hints": [
+				"Nos leva a algum lugar",
+				"Pode subir ou descer",
+				"No shopping são rolantes"
+			]
+		},
+		{
+			"word": "Roteador",
+			"hints": [
+				"Direciona os dados de uma rede",
+				"Está presente em residências e empresas",
+				"Importante para o bom funcionamento das redes"
+			]
+		},
+		{
+			"word": "Jardim",
+			"hints": [
+				"Espaço planejado",
+				"Rico em vegetação",
+				"Normalmente existe ao ar livre",
+				"Geralmente abriga a fauna e a flora"
+			]
+		},
+		{
+			"word": "Carteira",
+			"hints": [
+				"Pode armazenar documentos",
+				"Pequeno porte"
+			]
+		},
+		{
+			"word": "Sal",
+			"hints": [
+				"Inimigo dos hipertensos",
+				"Existem oito tipos diferentes",
+				"No Brasil o mais comum em receitas é o refinado"
+			]
+		},
+		{
+			"word": "Sobremesa",
+			"hints": [
+				"As crianças adoram",
+				"Geralmente é doce",
+				"Vem depois da refeição"
+			]
+		},
+		{
+			"word": "Planetas",
+			"hints": [
+				"Compõem o sistema solar",
+				"Atualmente a Terra é a única habitada",
+				"Todos giram ao redor do Sol"
+			]
+		},
+		{
+			"word": "Colmeia",
+			"hints": [
+				"Local onde habitam as produtoras de mel",
+				"Pode se formar em qualquer lugar",
+				"Não deve ser tocado sem equipamentos de proteção"
+			]
+		}
+	],
+	"subcommands": {
+		"startArgs": [
+			"start",
+			"iniciar",
+			"inicie",
+			"começar",
+			"comece",
+			"create",
+			"run",
+			"criar",
+			"cire"
+		],
+		"showArgs": [
+			"show",
+			"mostrar",
+			"info",
+			"status",
+			"letras",
+			"letters",
+			"estagio",
+			"situação",
+			"palavra",
+			"word"
+		],
+		"stopArgs": [
+			"stop",
+			"pare",
+			"parar",
+			"finalizar",
+			"terminar",
+			"descontinuar",
+			"termine",
+			"finalize"
+		],
+		"hintArgs": [
+			"dicas",
+			"dica",
+			"hint",
+			"hints",
+			"ajuda",
+			"ajudas",
+			"help",
+			"helps",
+			"dick",
+			"dicks"
+		]
+	}
+}

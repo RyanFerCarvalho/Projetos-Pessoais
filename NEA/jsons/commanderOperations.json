@@ -1,0 +1,56 @@
+{
+    "createArgs": [
+        "criar",
+        "definir",
+        "create",
+        "define",
+        "enviar",
+        "send",
+        "envie",
+        "crie",
+        "defina",
+        "set",
+        "register",
+        "registrar",
+        "registre",
+        "adicionar",
+        "adicione",
+        "add"
+    ],
+    "readArgs": [
+        "get",
+        "pegar",
+        "achar",
+        "find",
+        "send",
+        "pegue",
+        "ache",
+        "mostrar",
+        "mostre",
+        "show"
+    ],
+    "updateArgs": [
+        "atualizar",
+        "atualize",
+        "update",
+        "alterar",
+        "altere",
+        "alter",
+        "mude",
+        "mudar",
+        "change"
+    ],
+    "deleteArgs": [
+        "delete",
+        "deletar",
+        "apague",
+        "apagar",
+        "erase",
+        "clear",
+        "limpar",
+        "limpe",
+        "destroy",
+        "destrua",
+        "destruir"
+    ]
+}

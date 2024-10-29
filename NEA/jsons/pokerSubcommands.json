@@ -1,0 +1,134 @@
+{
+    "createArgs": [
+		"create",
+		"run",
+		"criar",
+		"crie",
+		"prepare",
+		"preparar"
+    ],
+    "joinArgs": [
+        "add",
+		"adicionar",
+		"adicione",
+		"entrar",
+		"enter",
+		"jogar",
+		"join",
+		"participar"
+    ],
+	"quitArgs": [
+		"sair",
+		"quit",
+		"deixar",
+		"leave",
+		"exit"
+	],
+	"startArgs": [
+		"start",
+		"iniciar",
+		"inicie",
+		"começar",
+		"comece"
+	],
+	"showSubcommands": {
+		"showPlayersArgs": [
+			"showplayers",
+			"mostrarjogadores",
+			"infoplayers",
+			"playersinfo",
+			"jogadoresinfo",
+			"infojogadores",
+			"jogadoresstatus",
+			"playersstatus",
+			"statusjogadores",
+			"statusplayers",
+			"estadoplayers",
+			"estadojogadores",
+			"situacaoplayers",
+			"situacaojogadores",
+			"situationplayers"
+		],
+		"showTableArgs": [
+			"showtable",
+			"mostrarmesa",
+			"infomesa",
+			"mesainfo",
+			"tableinfo",
+			"infotable",
+			"statustable",
+			"tablestatus",
+			"mesastatus",
+			"statusmesa",
+			"estadotable",
+			"estadomesa",
+			"situacaomesa",
+			"situacaotable",
+			"situationtable",
+			"tablesituation"
+		],
+		"showCardsArgs": [
+			"showcards",
+			"mostrarcartas",
+			"infocartas",
+			"cartasinfo",
+			"cardsinfo",
+			"infocards",
+			"statuscards",
+			"cardsstatus",
+			"cartasstatus",
+			"statusCartas",
+			"estadocards",
+			"estadocartas",
+			"situacaocartas",
+			"situacaocards",
+			"situationcards",
+			"cardssituation"
+		]
+	},
+	"playSubcommands": {
+		"allInArgs": [
+			"allin",
+			"tudo",
+			"geral",
+			"allpoints",
+			"todospontos",
+			"todosospontos",
+			"full",
+			"fullpoints",
+			"all"
+		],
+		"payArgs": [
+			"pay",
+			"pagar",
+			"cumprir",
+			"fill",
+			"completar",
+			"encher",
+			"igualar",
+			"desempatar"
+		],
+		"riseArgs": [
+			"rise",
+			"aumentar",
+			"subir",
+			"up",
+			"more",
+			"mais",
+			"alto",
+			"tall"
+		],
+		"passArgs": [
+			"pass",
+			"passar",
+			"next",
+			"proximo"
+		],
+		"outArgs": [
+			"out",
+			"deixar",
+			"sair",
+			"parar"
+		]
+	}
+}
