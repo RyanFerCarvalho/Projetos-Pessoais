@@ -1,0 +1,2129 @@
+:root{
+    --yellow-900: #ffcb14;
+    --yellow-800: #ffb600;
+    --yellow-700: #ffb90b;
+    --yellow-400: #fdcf3b;
+    --yellow-300: #ffce3b;
+    --yellow-700-f-750: rgba(255, 185, 11, 75%);
+    --yellow-700-f-564: rgba(255, 185, 11, 56.47%);
+    --yellow-700-f-440: rgba(255, 185, 11, 44%);
+    --yellow-400-f-850: rgba(253, 207, 59, 85%);
+
+    --blue-400: #1C3451;
+    --blue-300: #1b2f47;
+    --blue-200: #1b3048;
+    --blue-500: #1f3554;
+    --blue-500-f-850: rgba(31, 53, 84, 85%);
+
+    --gray-500: #878a8e;
+
+    --green-600: #89e04e;
+    --green-400: #1C5122;
+
+    --purple-500: #7b167d;
+
+    --white-500: #fff;
+    --black-500: #000;
+
+    --black-500-f-500: rgba(0, 0, 0, 50%);
+    --black-500-f-320: rgba(0, 0, 0, 32%);
+    --black-500-f-300: rgba(0, 0, 0, 30%);
+    --black-500-f-250: rgba(0, 0, 0, 25%);
+    --white-500-f-750: rgba(255, 255, 255, 75%);
+    --white-500-f-590: rgba(255, 255, 255, 59%);
+    --white-500-f-200: rgba(255, 255, 255, 20%);
+    --white-500-f-150: rgba(255, 255, 255, 15%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Estilizações gerais baseadas em classes e funcionalidades gerais */
+/* Estilização das fonts dos botões e inputs */
+input,
+button,
+select,
+textarea{
+    font-family: 'Inria Sans', sans-serif;
+}
+/* Estilização do modal de login */
+.loginModal {
+    width: 360px;
+    background-color: var(--blue-300);
+
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-bottom: 52px;
+}
+.loginModal header {
+    height: 55px;
+    box-shadow: 0 4px 4px var(--black-500-f-250);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 14px 0px 20px;
+}
+.loginModal header .logo {
+    width: 60px;
+}
+.loginModal .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 16px;
+}
+.loginModal .options .singUpP {
+    font-weight: 700;
+    font-size: 8px;
+    color: var(--white-500);
+
+    margin-bottom: 3px;
+}
+.loginModal .options button {
+    width: 107px;
+    height: 25px;
+    border: .5px solid var(--gray-500);
+    border-radius: 50px;
+    box-shadow: 0 4px 4px var(--black-500-f-250);
+
+    font-weight: 700;
+    font-size: 10px;
+}
+.loginModal .options .registerButton {
+    color: var(--blue-300);
+
+    background-color: var(--white-500);
+
+    margin-bottom: 11px;
+}
+.loginModal .options .line {
+    width: 48px;
+    border: 1px solid var(--white-500);
+
+    margin-bottom: 7.5px;
+}
+.loginModal .options .singInP {
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--white-500);
+
+    margin-bottom: 6.5px;
+}
+.loginModal .options .loginOptions {
+    display: flex;
+    gap: 7px;
+}
+.loginModal .options .loginOptions button {
+    color: var(--white-500);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginModal .options .loginOptions .loginButton {
+    gap: 4px;
+
+    background: linear-gradient(to left, var(--gray-500), var(--blue-400));
+}
+.loginModal .options .loginOptions .whatsappButton {
+    gap: 6px;
+
+    background-color: var(--green-400);
+}
+.loginModal .options .loginOptions .whatsappButton img {
+    height: 15px;
+}
+/* Esyilização dos "webkits" dos inputs tipo "password" */
+.passwordInputBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    position: relative;
+}
+.passwordInputBox input {
+    padding-right: 46px;
+}
+.passwordInputBox input::-ms-reveal {
+    display: none;
+}
+.passwordInputBox img {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+}   
+/* Estilização dos títulos sublinhados(underlined/underline) das "sections" */
+.sectionUnderlinedTitle{
+    max-width: max-content;
+
+    margin: 0 auto;
+}
+.underline{
+    border: 1px solid var(--black-500);
+}
+/*  Estilização das caixas de maquininhas disponibilizadas */
+.posElement{
+    position: relative;
+
+    padding-bottom: 6.25px;
+
+    box-shadow: 0 4px 4px var(--black-500-f-250);
+    border-radius: 10px;
+
+    width: max-content;
+    height: max-content;
+}
+.posElement .off{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+
+    background-color: var(--purple-500);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posElement .off span{
+    color: var(--white-500);
+    font-size: 20px;
+    font-weight: 700;
+}
+.posElement h6{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-top: 20.5px;
+    margin-bottom: 11px;
+}
+.posElement .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 15.5px;
+}
+.posElement .price .before{
+    font-size: 15px;
+    color: var(--yellow-800);
+    text-decoration: line-through;
+}
+.posElement .price .after{
+    font-size: 20px;
+    color: var(--blue-400);
+}
+.posElement .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+.posElement .buttons button{
+    width: 126px;
+    height: 37px;
+    border-radius: 20px;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+.posElement .spy{
+    position: relative;
+
+    border: 1px solid var(--blue-400);
+    background: transparent;
+}
+.posElement .spy img{
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%)
+}
+.posElement .buy{
+    color: var(--white-500);
+
+    background-color: var(--blue-400);
+    border: none;
+}
+/* Estilizações específicas das partes da aplicação */
+/* Estilização do body */
+body{
+    min-height: 100vh;
+    background-color: var(--white-500);
+
+    font-family: 'Inria Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+/* Estilização do header */
+/* Estilização do menu do header */
+header .menu{
+    color: var(--white-500);
+
+    height: 103px;
+    background-color: var(--blue-400);
+
+    padding: 0 7% 0 14.3%;
+
+    display: flex;
+    align-items: center;
+}
+header .menu img{
+    margin-right: 14.9%;
+}
+header .menu nav{
+    width: 43.2%;
+    min-width: max-content;
+
+    margin-right: 6.4%;
+}
+header .menu nav ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+header .menu nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100px;
+    height: 40px;
+    border-bottom: 1px solid var(--white-500);
+
+    text-decoration: none;
+    color: var(--white-500);
+}
+header .menu .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--yellow-700-f-750);
+    border: 1px solid var(--white-500);
+
+    margin-right: 2.6%;
+}
+header .menu .login{
+    margin-right: 3.5%;
+}
+header .menu button{
+    border: none;
+    background: transparent;
+}
+/* Estilização da newsLine*/
+/* Estilização da promotion da newsLine*/
+.newsLineContainer .promotion{
+    background-color: var(--yellow-700-f-564);
+    height: 78px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.newsLineContainer .promotion div{
+    width: 26%;
+    height: 24px;
+    background-color: var(--yellow-700-f-440);
+    border-radius: 20px;
+
+    margin-bottom: 10.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilização do footer */
+/* Estilização da services&Info do footer */
+footer .servicesInfo{
+    background-color: var(--blue-400);
+    
+    padding: 34px 2% 14px;
+}
+footer .servicesInfo .footerElements{
+    display: flex;
+    align-items: flex-start;
+
+    border-bottom: 1px solid var(--white-500);
+    padding: 0 2.7% 37.6px 1.4%;
+}
+footer .servicesInfo .footerElements .footerBrand{
+    margin-top: 6px;
+    margin-right: 3.8%;
+}
+footer .servicesInfo .footerElements .footerLinks{
+    width: 45.6%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 4.7%;
+}
+footer .servicesInfo .footerElements .footerLinks div{
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+}
+footer .servicesInfo .footerElements .footerLinks div h6{
+    font-weight: 700;
+    color: var(--gray-500);
+    font-size: 15px;
+}
+footer .servicesInfo .footerElements .footerLinks div a{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white-500);
+    text-decoration: none;
+}
+footer .servicesInfo .footerElements .footerSocialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 4.7%;
+
+    min-width: max-content;
+}
+footer .servicesInfo .footerElements .footerSocialMedia h3{
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--white-500);
+
+    margin-bottom: 19.5px;
+}
+footer .servicesInfo .footerElements .footerSocialMedia div{
+    padding: 10.5px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    background-color: var(--gray-500);
+    border-radius: 100px;
+}
+footer .servicesInfo .footerElements .footerSocialMedia div a{
+    display: flex;
+}
+footer .servicesInfo .footerElements .footerSocialMedia div a img{
+    width: 18.92px;
+}
+footer .servicesInfo .footerElements .footerFlags{
+    margin-top: 32px;
+    padding: 3px 10px 11.2px;
+
+    background-color: var(--white-500);
+    border-radius: 100px;
+
+    text-align: center;
+}
+footer .servicesInfo .footerElements .footerFlags h6{
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--blue-400);
+}
+footer .servicesInfo .footerElements .footerFlags section{
+    display: flex;
+    align-items: center;
+    gap: 11.5px;
+
+    margin-top: -3px;
+}
+footer .servicesInfo .footerElements .footerFlags section img{
+    width: 40.7px;
+}
+/* Estilização do authHeader */
+/* Estilização da Logo do authHeader */
+header section {
+    background: linear-gradient(to bottom, var(--blue-300), var(--blue-400));
+    height: 103px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 4px var(--black-500-f-250);
+
+    position: relative;
+}
+/* Estilização do main */
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+/* Estilização do main da página home */
+/* Estilização do homeContainer do main*/
+/* Estilização do hero do homeContainer */
+main .homeContainer .hero{
+    height: 412px;
+    width: 100%;
+
+    position: relative;
+
+    margin-bottom: 22px;
+}
+main .homeContainer .hero img{
+    height: 100%;
+    width: 100%;
+}
+main .homeContainer .hero div{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 0 40px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .homeContainer .hero div button{
+    background: transparent;
+    border: none;
+}
+/* Estilização da courtesy do homeContainer */
+main .homeContainer .courtesy h1{
+    text-align: center;
+    font-size: 40px;
+
+    margin-bottom: 22px;
+}
+main .homeContainer .courtesy section{
+    display: flex;
+    justify-content: center;
+    gap: 2.7%;
+}
+main .homeContainer .courtesy section div{
+    width: 306px;
+    border: 1px solid var(--gray-500);
+    border-radius: 35px 35px 0 35px;
+    box-shadow: 0 4px 4px var(--black-500-f-250);
+
+    text-align: center;
+
+    padding: 21px 25px 21px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .homeContainer .courtesy section div h5{
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 19px;
+}
+main .homeContainer .courtesy section div p{
+    margin-top: 21px;
+
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--blue-400);
+}
+/* Estilização da advantages do homeContainer */
+main .homeContainer .advantages .advantagesBanner{
+    background-image: url("/assets/imgs/advantagesBackground.jpg");
+    width: 1328px;
+    height: 560px;
+    border-radius: 100px;
+
+    margin: 47px auto 0;
+    padding: 0 87px 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .homeContainer .advantages .advantagesBanner div{
+    position: relative;
+}
+main .homeContainer .advantages .advantagesBanner .maquininha{
+    height: 480px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+main .homeContainer .advantages .advantagesBanner article{
+    width: 751px;
+    height: 492px;
+    background-color: var(--white-500-f-150);
+    border-radius: 100px;
+
+    padding-top: 29.5px;
+
+    color: var(--white-500);
+}
+main .homeContainer .advantages .advantagesBanner article h1{
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+
+    margin-bottom: 29.5px;
+}
+main .homeContainer .advantages .advantagesBanner article h1 span{
+    font-weight: 700;
+}
+main .homeContainer .advantages .advantagesBanner article h1 .yellowSpan{
+    color: var(--yellow-800);
+}
+main .homeContainer .advantages .advantagesBanner article div{
+    padding-left: 88px;
+}
+main .homeContainer .advantages .advantagesBanner article div ul{
+    list-style: square;
+
+    padding-top: 6px;
+    padding-left: 27px;
+
+    width: 508px;
+}
+main .homeContainer .advantages .advantagesBanner article div ul li{
+    margin: 8.5px 0;
+}
+/* Estilizando do standouts(destaques) do homeContainer */
+main .homeContainer .standouts .standoutsTitle h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    
+    margin-top: 39.5px;
+    margin-bottom: 8.5px;
+}
+main .homeContainer .standouts .standoutsTitle div{
+    margin-bottom: 18px;
+}
+main .homeContainer .standouts section{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+main .homeContainer .standouts section .standoutsElement {
+    position: relative;
+}
+main .homeContainer .standouts section .standoutsElement .hoverLogin {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-500-f-750);
+    border-radius: 10px;
+
+    padding-top: 138px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .homeContainer .standouts section .standoutsElement .hoverLogin h3,
+main .homeContainer .standouts section .standoutsElement .hoverLogin button {
+    margin-bottom: 16px;
+}
+main .homeContainer .standouts section .standoutsElement .hoverLogin h3 {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--blue-300);
+}
+main .homeContainer .standouts section .standoutsElement .hoverLogin button {
+    width: 79px;
+    height: 39px;
+    background-color: var(--yellow-900);
+    border: none;
+    border-radius: 50px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue-300);
+}
+main .homeContainer .standouts section .standoutsElement .hoverLogin p {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--blue-300);
+}
+/* Estilização da rates do homeContainer */
+main .homeContainer .rates{
+    margin-bottom: 153px;
+}
+main .homeContainer .rates .ratesTitle{
+    max-width: max-content;
+
+    margin: 0 auto;
+}
+main .homeContainer .rates .ratesTitle h1{
+    font-weight: 700;
+    font-size: 35px;
+
+    margin-top: 78px;
+    margin-bottom: 10px;
+}
+main .homeContainer .rates .ratesTitle div{
+    margin-bottom: 62px;
+}
+main .homeContainer .rates .ratesSimulator{
+    position: relative;
+
+    width: 948px;
+    height: 596px;
+
+    margin: 0 auto;
+}
+main .homeContainer .rates .ratesSimulator .simulator{
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/imgs/imgProvisoria.jpg);
+    background-size: cover;
+    border-radius: 11px;
+
+    display: flex;
+}
+main .homeContainer .rates .ratesSimulator .simulator form{
+    padding: 24px 22px 0 20px;
+
+    background-color: var(--yellow-400-f-850);
+    width: 499px;
+    height: 100%;
+    border-radius: 11px 0 0 11px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine,
+main .homeContainer .rates .ratesSimulator .simulator form .receiving{
+    margin-bottom: 22px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine{
+    display: flex;
+    justify-content: space-between;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .receiving,
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount,
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine div{
+    display: flex;
+    flex-direction: column;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .receiving,
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine div{
+    position: relative;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .receiving::after,
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine div::after{
+    content: url(/assets/svgs/simulatorSelectsArrow.svg);
+    
+    position: absolute;
+    right: 13px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine div::after{
+    bottom: 26px;
+    transform: translateY(50%);
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine .flag label,
+main .homeContainer .rates .ratesSimulator .simulator form .receiving label,
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount label{
+    padding-left: 8px
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine .type{
+    text-align: center;
+}
+main .homeContainer .rates .ratesSimulator .simulator form input,
+main .homeContainer .rates .ratesSimulator .simulator form select,
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount span,
+main .homeContainer .rates .ratesSimulator .simulator form label{
+    font-size: 20px;
+    font-weight: 700;
+}
+main .homeContainer .rates .ratesSimulator .simulator form label{
+    color: var(--blue-200);
+
+    margin-bottom: 12px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount span,
+main .homeContainer .rates .ratesSimulator .simulator form input::placeholder,
+main .homeContainer .rates .ratesSimulator .simulator form input,
+main .homeContainer .rates .ratesSimulator .simulator form select{
+    color: var(--white-500);
+}   
+main .homeContainer .rates .ratesSimulator .simulator form input,
+main .homeContainer .rates .ratesSimulator .simulator form select{
+    background-color: var(--blue-200);
+    border: 1px solid var(--black-500);
+    border-radius: 10px;
+
+    -webkit-appearance: none;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine select{
+    height: 52px;
+    
+    padding-left: 9px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine .flag select{
+    width: 254px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .inputsLine .type select{
+    width: 180px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .receiving::after{
+    bottom: 29px;
+    transform: translateY(50%);
+}
+main .homeContainer .rates .ratesSimulator .simulator form .receiving select,
+main .homeContainer .rates .ratesSimulator .simulator form input{
+    height: 58px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .receiving select{
+    padding-left: 15px;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount{
+    position: relative;
+}
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount span{
+    position: absolute;
+    bottom: 29px;
+    left: 15px;
+    transform: translateY(50%);
+}
+main .homeContainer .rates .ratesSimulator .simulator form .saleAmount input{
+    padding-left: 40px;
+    width: 100%;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults{
+    background-color: var(--blue-500-f-850);
+    height: 100%;
+    border-radius: 0 11px 11px 0;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 70.5px;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults div{
+    padding-bottom: 14.5px;
+    padding-left: 3px;
+    margin-left: 43px;
+
+    width: 366px;
+    border-bottom: 6px solid var(--white-500);
+
+    display: flex;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .ratesResult,
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .income{
+    margin-bottom: 14.5px;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .income,
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .receivingResult{
+    justify-content: space-between;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .income {
+    padding-right: 21px;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults div p,
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults div span,
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults button{
+    font-size: 20px;
+    font-weight: 700;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults div p,
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults div p span {
+    color: var(--yellow-300);
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .income span{
+    color: var(--green-600);
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .ratesResult .ratesResultPercentage,
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .receivingResult span {
+    color: var(--white-500);
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .ratesResult .ratesResultPercentage{
+    flex-grow: 1;
+    
+    text-align: center;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults .receivingResult {
+    padding-right: 1px;
+}
+main .homeContainer .rates .ratesSimulator .simulator .simulatorResults button{
+    color: var(--blue-300);
+
+    width: 408px;
+    height: 58px;
+    background-color: var(--yellow-900);
+    border-radius: 50px;
+    border: none;
+
+    align-self: center;
+
+    margin-top: 68px;
+}
+/* Estilização da flagsSection do homeContainer */
+main .homeContainer .flagsSection{
+    text-align: center;
+
+    margin-bottom: 128.5px;
+}
+main .homeContainer .flagsSection h6{
+    font-size: 20px;
+    font-weight: 700;
+}
+main .homeContainer .flagsSection section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17.5px;
+}
+/* Estilização da ratesBanner do homeContainer */
+main .homeContainer .ratesBanner img{
+    width: 100%;
+    
+    margin-bottom: 69px;
+}
+/* Estilização da socialMedia do homeContainer */
+main .homeContainer .socialMedia h1{
+    font-weight: 300;
+    font-size: 45px;
+    color: var(--blue-400);
+    text-align: center;
+
+    margin-bottom: 69px;
+}
+main .homeContainer .socialMedia section{
+    max-width: max-content;
+    height: 58.65px;
+    background-color: var(--blue-400);
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 15.5px;
+    margin: 0 auto 148px;
+}
+main .homeContainer .socialMedia section a{
+    display: flex;
+}
+/* Estilização da bePaycards do homeContainer */
+main .homeContainer .bePaycards .bePaycardsBanner{
+    margin: 0 auto 137px;
+    padding: 0 44px 5px 83px;
+    
+    width: 1328px;
+    height: 560px;
+    background-image: url(/assets/imgs/bePaycardsBanner.jpg);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main .homeContainer .bePaycards .bePaycardsBanner div{
+    padding-top: 83px;
+
+    height: 100%;
+}
+main .homeContainer .bePaycards .bePaycardsBanner div h1{
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--white-500);
+}
+main .homeContainer .bePaycards .bePaycardsBanner div h1 .boldFont{
+    font-weight: 700;
+}
+main .homeContainer .bePaycards .bePaycardsBanner div h1 .bolderFont{
+    font-weight: 400;
+}
+main .homeContainer .bePaycards .bePaycardsBanner div h1 .brandYellow,
+main .homeContainer .bePaycards .bePaycardsBanner div h1 .brand{
+    font-weight: 700;
+    font-size: 96px;
+}
+main .homeContainer .bePaycards .bePaycardsBanner div h1 .brandYellow{
+    color: var(--yellow-800);
+}
+main .homeContainer .bePaycards .bePaycardsBanner div button{
+    width: 207px;
+    height: 71px;
+    border-radius: 100px;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue-400);
+
+    background-image: linear-gradient(to bottom, var(--yellow-800), var(--yellow-900));
+
+    margin-top: 30px;
+}
+/* Estilização do main da página "Maquininhas" */
+/* Estilização do maquininhasContainer do main */
+main .maquininhasContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+/* Estilizando o searchMachines do maquininhasContainer */
+main .maquininhasContainer .searchMachines{
+    display: grid;
+    grid-template-columns: 254px auto;
+
+    flex-grow: 1;
+}
+main .maquininhasContainer .searchMachines .filter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 31px;
+
+    position: relative;
+
+    box-shadow: 0 4px 4px 0 var(--black-500-f-250);
+}
+main .maquininhasContainer .searchMachines .filter::after{
+    content: url(/assets/svgs/searchBarBars.svg);
+
+    position: absolute;
+    right: 30px;
+    top: 50.5px;
+    transform: translateY(-50%);
+}
+main .maquininhasContainer .searchMachines .filter .searchBar{
+    width: 222px;
+    height: 39px;
+    border-radius: 100px;
+    border: 1px solid var(--blue-400);
+
+    padding-left: 22px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions{
+    margin-top: 25px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions h2{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--blue-400);
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .machines{
+    color: var(--blue-400);
+
+    margin-top: 18px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .machines h3{
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .machines div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .machines .firstDiv{
+    margin-bottom: 22px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .machines div input{
+    width: 25px;
+    height: 25px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .machines div label{
+    font-size: 12px;
+    font-weight: 400;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices{
+    margin-top: 34px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices h3 {
+    color: var(--blue-300);
+    font-weight: 400;
+    font-size: 20px;
+
+    margin-bottom: 3px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices .inputs {
+    display: flex;
+    align-items: flex-end;
+
+    text-align: center;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices .inputs div{
+    display: flex;
+    flex-direction: column;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices .min{
+    margin-right: 15px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices label{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--blue-400);
+
+    margin-bottom: 5px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices input{
+    width: 53px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid var(--black-500-f-320);
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices .max{
+    margin-right: 13px;
+}
+main .maquininhasContainer .searchMachines .filter .filterOptions .prices img{
+    height: 25px;
+}
+main .maquininhasContainer .searchMachines .posMachines{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5%;
+
+    padding: 95px 0;
+}
+/* Estilização do main da página "maquininha" */
+/* Estilização do maquininhaContainer do main */    
+/* Estilização da machine do maquininhaContainer */
+main .maquininhaContainer .machine{
+    flex-grow: 1;
+    display: flex;
+}
+main .maquininhaContainer .machine .properties,
+main .maquininhaContainer .machine .purchase{
+    box-shadow: 0 4px 4px 0 var(--black-500-f-250);
+}
+main .maquininhaContainer .machine .properties{
+    width: 206px;
+
+    padding: 0 10px;
+}
+main .maquininhaContainer .machine .properties h2{
+    margin-left: 9px;
+    margin-top: 66px;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+main .maquininhaContainer .machine .properties h2 span{
+    color: var(--yellow-900);
+}
+main .maquininhaContainer .machine .properties .propertiesDescription{
+    margin-top: 50.9px;
+}
+main .maquininhaContainer .machine .properties .propertiesDescription .propertiesIcons{
+    width: 60px;
+    background-color: var(--blue-300);
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+    padding: 21px 0;
+}
+main .maquininhaContainer .machine .properties .propertiesDescription .propertiesIcons .propertiesElement{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+main .maquininhaContainer .machine .properties .propertiesDescription .propertiesIcons .propertiesElement span{
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    transform: translateX(100%) translateY(-50%);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    width: 121px;
+}
+main .maquininhaContainer .machine .machinePictures{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: max-content;
+
+    padding: 36px 0 88px;
+}
+main .maquininhaContainer .machine .machinePictures .mainImg{
+    width: 654px;
+    height: 654px;
+    border-radius: 40px;
+
+    margin-bottom: 18px;
+}
+main .maquininhaContainer .machine .machinePictures .otherImgs{
+    width: 654px;
+
+    padding: 0 25px;
+
+    display: flex;
+    gap: 25px;
+}
+main .maquininhaContainer .machine .machinePictures .otherImgs img{
+    width: 115px;
+    height: 115px;
+    border-radius: 30px;
+}
+main .maquininhaContainer .machine .purchase{
+    min-width: max-content;
+    max-width: 529px;
+
+    flex-grow: 1;
+
+    padding: 72.45px 0 0 25px;
+}
+main .maquininhaContainer .machine .purchase h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--blue-300);
+
+    margin-left: 3.19px;
+    margin-bottom: 12.9px;
+}
+main .maquininhaContainer .machine .purchase h1 span{
+    color: var(--yellow-800);
+}
+main .maquininhaContainer .machine .purchase .price{
+    display: flex;
+    align-items: center;
+    gap: 15.12px;
+
+    margin-left: 15.23px;
+    margin-bottom: 26.5px;
+}
+main .maquininhaContainer .machine .purchase .price span{
+    font-weight: 700;
+}
+main .maquininhaContainer .machine .purchase .price .before{
+    font-size: 21px;
+    text-decoration: line-through;
+}
+main .maquininhaContainer .machine .purchase .price .after{
+    font-size: 30px;
+    color: var(--blue-300);
+}
+main .maquininhaContainer .machine .purchase .discount{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-left: 3.75px;
+    margin-bottom: 34.62px;
+}
+main .maquininhaContainer .machine .purchase .discount p{
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--blue-300);
+}
+main .maquininhaContainer .machine .purchase .discount p span{
+    color: var(--purple-500);
+}
+main .maquininhaContainer .machine .purchase .buy{
+    display: flex;
+    gap: 10px;
+
+    margin-left: 4px;
+    margin-bottom: 31.5px;
+}
+main .maquininhaContainer .machine .purchase .buy .amount{
+    position: relative;
+
+    display: flex;
+}
+main .maquininhaContainer .machine .purchase .buy .amount button{
+    position: absolute;
+
+    background: transparent;
+    border: none;
+
+    display: flex;
+}
+main .maquininhaContainer .machine .purchase .buy .amount .less{
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+}
+main .maquininhaContainer .machine .purchase .buy .amount input{
+    text-align: center;
+    color: var(--black-500);
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    width: 135px;
+    height: 49.46px;
+    background: transparent;
+    border: 1px solid var(--black-500);
+    border-radius: 15px;
+}
+main .maquininhaContainer .machine .purchase .buy .amount input::-webkit-inner-spin-button,
+main .maquininhaContainer .machine .purchase .buy .amount input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+main .maquininhaContainer .machine .purchase .buy .amount .more{
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+}
+main .maquininhaContainer .machine .purchase .buy .buyButton{
+    width: 300px;
+    background-color: var(--blue-300);
+    border-radius: 15px;
+    border: none;
+
+    font-size: 15px;
+    font-family: 700;
+    color: var(--white-500);
+}
+main .maquininhaContainer .machine .purchase .sending{
+    margin-bottom: 25.92px;
+}
+main .maquininhaContainer .machine .purchase .sending .title,
+main .maquininhaContainer .machine .purchase .shop .title{
+    display: flex;
+    align-items: flex-end;
+
+    gap: 9px;
+
+    margin-bottom: 36.5px;
+}
+main .maquininhaContainer .machine .purchase .sending .title span,
+main .maquininhaContainer .machine .purchase .shop .title span{
+    font-weight: 300;
+    font-size: 15px;
+}
+main .maquininhaContainer .machine .purchase .sending .cpf{
+    display: flex;
+
+    margin-left: 4px;
+}
+main .maquininhaContainer .machine .purchase .sending .cpf input{
+    width: 262px;
+    height: 49.46px;
+    background: transparent;
+    border: 1px solid var(--black-500-f-300);
+    border-radius: 15px 0 0 15px;
+
+    padding-left: 12px;
+
+    font-weight: 300;
+    font-size: 15px;
+}
+main .maquininhaContainer .machine .purchase .sending .cpf input::placeholder{
+    color: var(--black-500-f-300);
+}   
+main .maquininhaContainer .machine .purchase .sending .cpf button{
+    width: 183px;
+    background: transparent;
+    border: 1px solid var(--black-500);
+    border-radius: 0 15px 15px 0;
+
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--blue-300);
+}
+main .maquininhaContainer .machine .purchase .shop{
+    margin-bottom: 29.53px;
+}
+main .maquininhaContainer .machine .purchase .shop .location{
+    position: relative;
+
+    width: max-content;
+
+    margin-left: 4px;
+}
+main .maquininhaContainer .machine .purchase .shop .location select{
+    width: 445px;
+    height: 49.46px;
+
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--blue-300);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 0 var(--black-500-f-250);
+
+    padding: 0 94px 0 30px;
+
+    -webkit-appearance: none;
+}
+main .maquininhaContainer .machine .purchase .shop .location .sendingPrice{
+    position: absolute;
+    top: 50%;
+    right: 27.32px;
+    transform: translateY(-50%);
+
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue-300);
+}
+main .maquininhaContainer .machine .purchase .guarantee{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+main .maquininhaContainer .machine .purchase .guarantee .description{
+    width: 246px;
+}
+main .maquininhaContainer .machine .purchase .guarantee .description h6{
+    font-weight: 700;
+    font-size: 12px;
+
+    margin-bottom: 2.5px;
+}
+main .maquininhaContainer .machine .purchase .guarantee .description p{
+    font-weight: 300;
+    font-size: 10px;
+}
+/* Estilização do main da página "login" */
+/* Estilização do loginContainer do main */
+main .loginContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    background-image: url(/assets/imgs/authBackground.png);
+    background-size: cover;
+
+    padding-top: 67px;
+    padding-bottom: 88px;
+}
+/* Estilização da loginForm do loginContainer */
+main .loginContainer .loginForm .loginFormBox {
+    background-color: var(--black-500-f-500);
+    box-shadow: 0 4px 4px 0 var(--black-500-f-250);
+    width: 606px;
+    border-radius: 20px;
+
+    padding: 22px 20px 81px;
+}
+main .loginContainer .loginForm .loginFormBox h2 {
+    font-size: 35px;
+    font-weight: 300;
+    color: var(--white-500);
+
+    margin-bottom: 10px;
+}
+main .loginContainer .loginForm .loginFormBox h2 span {
+    font-weight: 700;
+}
+main .loginContainer .loginForm .loginFormBox h2 .yellowBrand {
+    color: var(--yellow-900);
+}
+main .loginContainer .loginForm .loginFormBox p {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--white-500);
+
+    margin-bottom: 10px;
+}
+main .loginContainer .loginForm .loginFormBox p a {
+    color: var(--yellow-800);
+
+    margin-left: 9px;
+}
+main .loginContainer .loginForm .loginFormBox form {
+    display: flex;
+    flex-direction: column;
+}
+main .loginContainer .loginForm .loginFormBox form label {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--white-500);
+
+    margin-bottom: 10px;
+}
+main .loginContainer .loginForm .loginFormBox form input,
+main .loginContainer .loginForm .loginFormBox form button{
+    height: 59px;
+    border-radius: 10px;
+}
+main .loginContainer .loginForm .loginFormBox form input:not([type=password]),
+main .loginContainer .loginForm .loginFormBox form .passwordInputBox {
+    margin-bottom: 30px;
+}
+main .loginContainer .loginForm .loginFormBox form input {
+    padding-left: 15px;
+
+    background: transparent;
+    border: 1px solid var(--white-500);
+
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--white-500);
+}
+main .loginContainer .loginForm .loginFormBox form button {
+    background-color: var(--blue-300);
+
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white-500);
+
+    border: none;
+}
+/* Estilização do main da página "Cadastro" */
+/* Estilização do cadastroContainer do main */
+main .cadastroContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    background-image: url(/assets/imgs/authBackground.png);
+    background-size: cover;
+
+    padding-top: 67px;
+    padding-bottom: 88px;
+}
+/* Estilização da singUpForm do loginContainer */
+main .cadastroContainer .singUpForm .singUpFormBox {
+    background-color: var(--black-500-f-500);
+    box-shadow: 0 4px 4px 0 var(--black-500-f-250);
+    width: 606px;
+    border-radius: 20px;
+
+    padding: 22px 20px 81px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox h2 {
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--white-500);
+
+    margin-bottom: 10px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox p {
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--white-500);
+
+    margin-bottom: 10px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox p a {
+    color: var(--yellow-800);
+}
+main .cadastroContainer .singUpForm .singUpFormBox form {
+    display: flex;
+    flex-direction: column;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form label {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--white-500);
+
+    margin-bottom: 10px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form input,
+main .cadastroContainer .singUpForm .singUpFormBox form button,
+main .cadastroContainer .singUpForm .singUpFormBox form div .flag {
+    height: 59px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form input,
+main .cadastroContainer .singUpForm .singUpFormBox form button {
+    border-radius: 10px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form input:not([type=password]),
+main .cadastroContainer .singUpForm .singUpFormBox form .passwordInputBox {
+    margin-bottom: 30px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form input {
+    background: transparent;
+    border: 1px solid var(--white-500);   
+
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--white-500);
+
+    padding-left: 15px;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form .cepInputs {
+    display: flex;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form .cepInputs .flag {
+    width: 45px;
+
+    border-radius: 10px 0 0 10px;
+    border-color: var(--white-500);
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form .cepInputs input {
+    flex-grow: 1;
+
+    border-radius: 0 10px 10px 0;
+}
+main .cadastroContainer .singUpForm .singUpFormBox form button {
+    background-color: var(--blue-300);
+    border: none;
+
+    font-size: 700;
+    font-size: 17px;
+    color: var(--white-500);
+}
+/* Estilização do main da página "Tipoconta" */
+/* Estilização do cadatroTipocontaContainer do main */
+main .cadastroTipocontaContainer {
+    flex-grow: 1;
+    display: flex;
+}
+/* Estilização da accountType do cadastroTipocontaContainer */
+main .cadastroTipocontaContainer .accountType {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 48px 0;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox h2,
+main .cadastroTipocontaContainer .accountType .accountTypeBox .subtitle {
+    margin-left: 26px;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+
+    margin-bottom: 31px;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox .types {
+    width: 606px;
+    border: 1px solid var(--gray-500);
+    border-radius: 20px;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox .types a {
+    display: grid;
+    grid-template-columns: 51px auto;
+
+    height: 70px;
+
+    text-decoration: none;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox .types a .icons {
+    align-self: center;
+    justify-self: center;
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox .types a p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--blue-400);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 20px;
+
+    border-bottom: 1px solid var(--gray-500);
+}
+main .cadastroTipocontaContainer .accountType .accountTypeBox .types a .noBorder {
+    border: none;
+}
+/* Estilização do main da página "Tiponegocio" */
+/* Estilização do cadastroTiponegocioContainer do main */
+main .cadastroTiponegocioContainer {
+    flex-grow: 1;
+    display: flex;
+}
+/* Estilização da marketType do cadastroTiponegocioContainer */
+main .cadastroTiponegocioContainer .marketType {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    padding: 67px 0 48px;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox {
+    position: relative;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox h2,
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .subtitle {
+    margin-left: 14px;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .types {
+    width: 606px;
+    border: 1px solid var(--gray-500);
+    border-radius: 20px;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .types a {
+    display: grid;
+    grid-template-columns: 51px auto;
+
+    height: 70px;
+
+    text-decoration: none;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .types a .icons {
+    align-self: center;
+    justify-self: center;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .types a p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--blue-400);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 20px;
+
+    border-bottom: 1px solid var(--gray-500);
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .types a .noBorder {
+    border: none;
+}
+main .cadastroTiponegocioContainer .marketType .marketTypeBox .returnLink {
+    display: flex;
+
+    position: absolute;
+    top: 33px;
+    left: -31px;
+    transform: translateX(-100%);
+}
+/* Estilização do main da página "Validarnegocio" */
+/* Estilização do cadastroValidarnegocioContainer */
+main .cadastroValidarnegocioContainer {
+    flex-grow: 1;
+    display: flex;
+}
+/* Estilização do enterpriseValidate do cadastroValidarnegocioContainer */
+main .cadastroValidarnegocioContainer .enterpriseValidate {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox {
+    width: 566px;
+
+    position: relative;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox .subtitle {
+    font-size: 20px;
+    font-weight: 300;
+
+    margin-bottom: 36px;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form {
+    display: flex;
+    flex-direction: column;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form label {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--blue-300);
+
+    margin-bottom: 10px;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form input,
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form textarea {
+    font-size: 17px;
+    font-weight: 300;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form input {
+    height: 59px;
+    border: 1px solid var(--blue-300);
+    border-radius: 10px;
+
+    padding: 0 15px;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form .name {
+    margin-bottom: 31px;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form textarea{
+    height: 89px;
+    border: 1px solid var(--blue-300);
+    border-radius: 10px;
+
+    padding: 5px 10px;
+    margin-bottom: 33px;
+
+    resize: none;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form .contactInputLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form .contactInputLine div {
+    display: flex;
+    flex-direction: column;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form .contactInputLine div h4 {
+    width: 700;
+    font-size: 25px;
+    color: var(--blue-300);
+
+    margin-bottom: 15px;
+}
+
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form .contactInputLine div input {
+    width: 270px;
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox form .contactInputLine button {
+    width: 270px;
+    height: 59px;
+    background-color: var(--blue-300);
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--white-500);
+}
+main .cadastroValidarnegocioContainer .enterpriseValidate .enterpriseValidateBox a {
+    display: flex;
+
+    position: absolute;
+    top: 33px;
+    left: -45px;
+    transform: translateX(-100%);
+}
+/* Estilização do main da página "Endereco" */
+/* Estilização do cadastroEnderecoContainer */
+main .cadastroEnderecoContainer {
+    flex-grow: 1;
+    display: flex;
+}
+/* Estilização do addressForm do cadastroEnderecoContainer */
+main .cadastroEnderecoContainer .addressForm {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox {
+    width: 1030px;
+
+    position: relative;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+    margin-left: 29px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--blue-300);
+    border-radius: 20px;
+
+    padding: 17px 29px 27px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form h4 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--blue-300);
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form label {
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--blue-300);
+
+    margin-left: 13px;
+    margin-bottom: 8px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form input {
+    padding: 0 13px;
+    margin-bottom: 12px;
+
+    font-weight: 300;
+    font-size: 25px;
+
+    height: 66px;
+    border-radius: 15px;
+    border: 1px solid var(--blue-300);
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .inputsLine {
+    display: flex;
+    justify-content: space-between;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .inputsLine div {
+    display: flex;
+    flex-direction: column;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .inputsLine div .address {
+    width: 595px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .inputsLine div .number {
+    width: 353px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .buttonLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 18px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .buttonLine p {
+    font-weight: 300;
+    font-size: 20px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox form .buttonLine button {
+    width: 270px;
+    height: 59px;
+    background-color: var(--blue-300);
+    border: none;
+    border-radius: 10px;
+
+    color: var(--white-500);
+    font-weight: 700;
+    font-size: 25px;
+}
+main .cadastroEnderecoContainer .addressForm .addressFormBox a {
+    display: flex;
+
+    position: absolute;
+    top: 3px;
+    left: -16px;
+    transform: translateX(-100%);
+}
+/* Estilização do main da página "Renda" */
+/* Estilização do cadastroRendaContainer do main */
+main .cadastroRendaContainer {
+    flex-grow: 1;
+    display: flex;
+}
+/* Estilização da marketType do cadastroRendaContainer */
+main .cadastroRendaContainer .monthIncome {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    padding: 67px 0 48px;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox {
+    position: relative;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox h2,
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .subtitle {
+    margin-left: 17px;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 1.13px;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .incomes {
+    width: 536px;
+    border: 1px solid var(--gray-500);
+    border-radius: 20px;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .incomes a {
+    display: flex;
+
+    height: 70px;
+
+    padding-left: 16px;
+
+    text-decoration: none;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .incomes a p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--blue-400);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 20px;
+
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-500);
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .incomes a .noBorder {
+    border: none;
+}
+main .cadastroRendaContainer .monthIncome .monthIncomeBox .returnLink {
+    display: flex;
+
+    position: absolute;
+    top: 33px;
+    left: -28px;
+    transform: translateX(-100%);
+}
+/* Estilização do main da página "Dadopessoal" */
+/* Estilização do cadastroDadopessoalContainer */
+main .cadastroDadopessoalContainer {
+    flex-grow: 1;
+    display: flex;
+}
+/* Estilização do personalData do cadastroDadopessoalContainer */
+main .cadastroDadopessoalContainer .personalData {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox {
+    width: 566px;
+
+    position: relative;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 1.13px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+
+    margin-bottom: 36px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form {
+    display: flex;
+    flex-direction: column;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form label {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--blue-300);
+
+    margin-left: 13px;
+    margin-bottom: 8px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form input,
+main .cadastroDadopessoalContainer .personalData .personalDataBox form button {
+    height: 59px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form input {
+    padding: 0 13px;
+    margin-bottom: 31px;
+
+    font-weight: 300;
+    font-size: 17px;
+
+    border: 1px solid var(--blue-300);
+    border-radius: 10px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form h4 {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--blue-300);
+
+    margin-bottom: 15px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .date {
+    display: flex;
+    justify-content: space-between;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .date div {
+    display: flex;
+    flex-direction: column;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .date div input::-webkit-inner-spin-button,
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .date div input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .date div input {
+    width: 138px;
+
+    text-align: center;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .buttonLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .buttonLine p {
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--black-500-f-500);
+
+    width: 291px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox form .buttonLine button {
+    width: 270px;
+    background-color: var(--blue-300);
+    border: none;
+    border-radius: 10px;
+
+    color: var(--white-500);
+    font-weight: 700;
+    font-size: 25px;
+}
+main .cadastroDadopessoalContainer .personalData .personalDataBox a {
+    display: flex;
+
+    position: absolute;
+    top: 33px;
+    left: -45px;
+    transform: translateX(-100%);
+}
