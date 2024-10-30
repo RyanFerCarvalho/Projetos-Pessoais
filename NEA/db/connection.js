@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-const DataBase = new Sequelize("nea_bot", "root", "contaGeneraldoSqLouc023", {
+const DataBase = new Sequelize("nea_bot", "root", "senha", {
     host: '127.0.0.1',
     port: 3306,
     dialect: 'mysql'
